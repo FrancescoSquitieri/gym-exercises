@@ -38,7 +38,7 @@ const Modal = ({ open, setOpen }) => {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            The data used are taken from "rapidapi", a very useful third party service that exposes many data but which unfortunately, after 500 calls to an endpoint in a single month you have to wait for the next month to be able to make a further 500 calls to the maximum (free floor , I am poor but very determined! :)), if something should go wrong, I am very sorry but the maximum calls for the endpoints with which I developed this app have been reached
+            The data used are taken from "rapidapi", a very useful third party service that exposes many data but which unfortunately, after 500 calls to an endpoint in a single month you have to wait for the next month to be able to make a further 500 calls to the maximum (free floor , I am poor but very determined! 😁💪 ), if something should go wrong, I am very sorry but the maximum calls for the endpoints with which I developed this app have been reached
           </DialogContentText>
         </DialogContent>
         <DialogActions>
