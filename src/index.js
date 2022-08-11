@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { ExercisesProvider } from './contexts/ExercisesContext.context';
+import { ExercisesDetailsProvider } from './contexts/ExercisesDetails.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ExercisesProvider>
+        <ExercisesDetailsProvider>
+          <App />
+        </ExercisesDetailsProvider>
+      </ExercisesProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
