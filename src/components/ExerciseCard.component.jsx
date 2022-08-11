@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import { Button, Stack, Typography } from '@mui/material';
 
 const ExerciseCard = ({ exercise }) => {
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
-    <Link className='exercise-card' to={`/exercise/${exercise.id}`}>
+    <Link className='exercise-card' to={`/exercise/${exercise.id}`} onClick={handleScrollToTop}>
       <img src={exercise.gifUrl} alt={exercise.name} loading='lazy' />
       <Stack direction='row'>
         <Button
